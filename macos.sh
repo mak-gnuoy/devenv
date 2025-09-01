@@ -13,3 +13,7 @@ brew install --cask dbeaver-community
 ### Docker and Tools
 brew install --cask docker-desktop
 
+### Web Browsers
+brew install --cask google-chrome
+#brew install --cask microsoft-edge
+
