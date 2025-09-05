@@ -12,8 +12,13 @@ code --install-extension ms-python.python
 ### DB and Tools
 brew install --cask dbeaver-community
 
-### Docker and Tools
-brew install --cask docker-desktop
+### Container and Tools
+#brew install --cask docker-desktop
+brew install podman \
+    && podman machine init \
+    && podman machine start \
+    && alias docker=podman \
+    && brew install --cask podman-desktop
 
 ### Web Browsers
 brew install --cask google-chrome
