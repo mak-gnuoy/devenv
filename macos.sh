@@ -27,3 +27,9 @@ brew install --cask google-chrome
 ### VPN Clent
 #brew install --cask tunnelblick
 
+### FreeLens for k8s
+#brew install --cask freelens
+
+### Notion
+#brew install --cask notion
+
