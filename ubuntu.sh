@@ -2,12 +2,12 @@
 
 sudo apt update -y
 
-### git
 sudo apt install -y \
   git \
   curl \
   wget \
-  net-tools
+  net-tools \
+  procps
 
 ### openssh server
 sudo apt install -y openssh-server
