@@ -1,7 +1,10 @@
 #!/bin/bash
 
 ### Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
+    && echo >> /Users/noname/.zprofile \
+    && echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/noname/.zprofile \
+    && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ### IDEs
 brew install --cask visual-studio-code
@@ -10,7 +13,7 @@ code --install-extension ms-python.python
 #brew install --cask cursor
 
 ### DB and Tools
-brew install --cask dbeaver-community
+#brew install --cask dbeaver-community
 
 ### Container and Tools
 #brew install --cask docker-desktop
@@ -21,7 +24,7 @@ brew install podman \
     && brew install --cask podman-desktop
 
 ### Web Browsers
-brew install --cask google-chrome
+#brew install --cask google-chrome
 #brew install --cask microsoft-edge
 
 ### VPN Clent
